@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.menutren {
+    width: 100%;
+    min-height: 150px;
+    background: url(../images/menu.png) no-repeat center;
+    background-size: cover;
+}
+
+a.tieude {
+    color: #414141;
+    font-size: 15px;
+    font-weight: bold;
+    display: block;
+    padding-bottom: 10px;
+}
+
+a.tieude:hover {
+    color: #189eff;
+}
+
+.gia1 {
+    font-size: 19px;
+    color: #414141;
+    font-weight: 500;
+}
+
+input.sluong {
+    width: 150%;
+    padding: 0px 0px 0px 8px;
+    line-height: 30px;
+}
+
+.capnhatsp,
+.xoasp {
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.dongtinhgia {
+    padding: 10px 0 20px 0;
+    border-bottom: 1px solid #dbdbdb;
+    margin-bottom: 25px;
+}
+
+.phai.float-right {
+    text-align: right;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+span.gia-vat {
+    font-size: 22px;
+    color: #e61d30;
+}
+
+.vat {
+    color: #b5afaf;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.card._1spkhac b {
+    font-size: 20px;
+    padding: 10px 0px;
+    color: #323232;
+    display: block;
+}

@@ -1,18 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Demo Shopping Cart by Typescript 2019</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="stylesheet" href="css/bootstrap4.min.css" />
-    <link rel="stylesheet" href="css/font-awesome.css" />
-    <link rel="stylesheet" href="css/mystyle.css" />
-  </head>
+<head>
+  <title>Demo Shopping Cart by Typescript 2019</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/bootstrap4.min.css" />
+  <link rel="stylesheet" href="css/font-awesome.css" />
+  <link rel="stylesheet" href="css/mystyle.css" />
+</head>
 
-  <body>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/popper4.min.js"></script>
-    <script src="js/bootstrap4.min.js"></script>
-  </body>
+<div class="menutren">
+  <div class="container-fluid"></div>
+</div>
+
+<div class="container" id="noidung">
+  <div class="row thongbao pt-3">
+    <div class="col-sm-12">
+      <div class="alert alert-success">
+        <i class="fa fa-check-square-o"></i> <strong>Tên sản phẩm</strong> đã được thêm giỏ hàng.
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-12">
+      <h3 class="tdto"> GIỎ HÀNG<small>(8 sản phẩm)</small></i> </h3>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-8" id="dssanpham">
+      <div class="card">
+        <div class="row motsanpham card-body">
+          <div class="col-sm-2">
+            <img src="images/sp1.jpg" alt="" class="img-fluid">
+          </div>
+          <div class="col-sm-4">
+            <a href="#" class="tieude">Nồi Chiên Không Dầu Bluestone AFB-5859 - 3.3L</a>
+            <div class="noidungsp">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis, quidem.</div>
+          </div>
+          <div class="col-sm-2">
+            <div class="gia1">200.000đ</div>
+            <div class="badge badge-warning">12%</div>
+          </div>
+          <div class="col-sm-1">
+            <input type="number" class="sluong" min=1 value="1">
+          </div>
+          <div class="col-sm-3 ">
+            <div class="btn-group float-right">
+              <div class="btn btn-outline-success capnhatsp">Update</div>
+              <div class="btn btn-outline-danger xoasp">Delete</div>
+            </div>
+          </div>
+        </div>
+        <!-- /motsanpham -->
+
+        <hr>
+        <div class="row motsanpham card-body">
+          <div class="col-sm-2">
+            <img src="images/sp2.jpg" alt="" class="img-fluid">
+          </div>
+          <div class="col-sm-4">
+            <a href="#" class="card-title tieude">Điện Thoại iPhone XS Max 64GB - Hàng Chính Hãng - Gold</a>
+            <div class="noidungsp">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis, quidem.</div>
+          </div>
+          <div class="col-sm-2">
+            <div class="gia1">200.000đ</div>
+            <div class="badge badge-warning">12%</div>
+          </div>
+          <div class="col-sm-1">
+            <input type="number" class="form-group sluong" min=1 value="1">
+          </div>
+          <div class="col-sm-3">
+            <div class="btn-group float-right">
+              <div class="btn btn-outline-success capnhatsp">Update</div>
+              <div class="btn btn-outline-danger xoasp">Delete</div>
+            </div>
+          </div>
+        </div>
+        <!-- /motsanpham -->
+      </div>
+
+
+      <div class="row sanphamkhac mt-3">
+        <div class="col-sm-12 py-3">
+          <h3 class="tdto">Sản phẩm khác</h3>
+        </div>
+        <div class="col-sm-4">
+          <div class="card _1spkhac">
+            <img class="card-img-top" src="images/sp4.jpg" alt="Card image">
+            <div class="card-body">
+              <a href="#" class="card-title tdspkhac">Sim 4G công nghệ cao</a>
+              <p class="card-text mota">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+              <b>129.000đ</b>
+              <a href="#" class="btn btn-block btn-outline-primary">Mua ngay</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card _1spkhac">
+            <img class="card-img-top" src="images/sp5.jpg" alt="Card image">
+            <div class="card-body">
+              <a href="#" class="card-title tdspkhac">Ốp lưng iphone X</a>
+              <p class="card-text mota">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+              <b>1.200.000đ</b>
+              <a href="#" class="btn btn-block btn-outline-primary">Mua ngay</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card _1spkhac">
+            <img class="card-img-top" src="images/sp6.jpg" alt="Card image">
+            <div class="card-body">
+              <a href="#" class="card-title tdspkhac">Điện thoại Samsung Galaxy</a>
+              <p class="card-text mota">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+              <b>7.100.000đ</b>
+              <a href="#" class="btn btn-block btn-outline-primary">Mua ngay</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /sanphamkhac -->
+    </div>
+    <!-- /col-sm-8 -->
+
+
+    <div class="col-sm-4" id="tinhgia">
+      <div class="divtrang card pt-3">
+        <div class="dongtinhgia">
+          <div class="phai float-right"> 475.000đ</div>
+          <div class="trai">Tạm tính: </div>
+        </div>
+        <div class="dongthanhtien">
+          <div class="phai float-right">
+            <span class="gia-vat">475.000đ</span>
+            <div class="vat">(Đã bao gồm VAT)</div>
+          </div>
+          <div class="trai">Tạm tính: </div>
+        </div>
+      </div>
+      <a href="#" class="btn btn-danger btn-block mt-3">Tiến hành đặt hàng</a>
+    </div>
+    <!-- /col-sm-4 -->
+  </div>
+</div>
+
+<body>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper4.min.js"></script>
+  <script src="js/bootstrap4.min.js"></script>
+</body>
+
 </html>
